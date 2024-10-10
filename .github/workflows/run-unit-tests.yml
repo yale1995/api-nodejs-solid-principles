@@ -13,8 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "pnpm"
+          cache: "npm"
 
-      - run: npm install -g pnpm
-      - run: pnpm ci
-      - run: pnpm run test
+      - run: npm ci
+      - run: npm run test
