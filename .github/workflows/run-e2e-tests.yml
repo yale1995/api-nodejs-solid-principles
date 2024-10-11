@@ -30,7 +30,6 @@ jobs:
           node-version: 18
           cache: "pnpm"
 
-      - run: npm install pnpm -g
       - run: pnpm install
       - run: pnpm test:e2e
         env:
