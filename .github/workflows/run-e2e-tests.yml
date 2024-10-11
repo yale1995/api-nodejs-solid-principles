@@ -31,7 +31,7 @@ jobs:
           cache: "pnpm"
 
       - run: pnpm install
-      - run: pnpm run test:e2e
+      - run: pnpm test:e2e
         env:
           JWT_SECRET: test
           DATABASE_URL: "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
