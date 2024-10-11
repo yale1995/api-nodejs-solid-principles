@@ -38,9 +38,6 @@ importers:
       supertest:
         specifier: 7.0.0
         version: 7.0.0
-      vitest-environment-prisma:
-        specifier: link:prisma/vitest-environment-prisma
-        version: link:prisma/vitest-environment-prisma
       zod:
         specifier: 3.23.8
         version: 3.23.8
