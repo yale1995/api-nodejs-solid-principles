@@ -12,7 +12,7 @@
     "lint": "eslint src --ext .ts --fix",
     "test": "vitest run --dir src/use-cases",
     "test:watch": "vitest --dir src/use-cases",
-    "pretest:e2e": "run-s test:create-prisma-environment test:install-prisma-environment",
+    "pretest:e2e": "pnpm install ./prisma/vitest-environment-prisma",
     "test:e2e": "vitest run --dir src/http",
     "test:e2e:watch": "vitest --dir src/http",
     "test:coverage": "vitest --coverage",
