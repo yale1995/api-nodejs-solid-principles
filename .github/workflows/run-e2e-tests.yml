@@ -31,6 +31,12 @@ jobs:
           cache: "pnpm"
 
       - run: pnpm install
+
+      - name: Setup Test Environment
+        run: |
+          pnpm link ./prisma/vitest-environment-prisma --global
+          pnpm link --global vitest-environment-prisma
+
       - run: pnpm test:e2e
         env:
           JWT_SECRET: test
