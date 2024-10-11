@@ -34,3 +34,5 @@ jobs:
         env:
           JWT_SECRET: test
           DATABASE_URL: "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
+          PORT: 3333
+          NODE_ENV: "test"
